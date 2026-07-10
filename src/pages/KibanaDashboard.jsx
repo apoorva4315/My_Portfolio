@@ -1,7 +1,7 @@
 import "./ProjectDetails.css";
 import { Link } from "react-router-dom";
 
-import kibana from "../assets/kibana.png";
+import kibana from "../assets/kibana-temp.png";
 
 const KibanaDashboard = () => {
   return (

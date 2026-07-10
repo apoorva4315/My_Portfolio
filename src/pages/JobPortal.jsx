@@ -2,7 +2,7 @@ import "./ProjectDetails.css";
 
 import { Link } from "react-router-dom";
 
-import jobImage from "../assets/job.png";
+import jobImage from "../assets/job-temp.png";
 
 const JobPortal = () => {
   return (

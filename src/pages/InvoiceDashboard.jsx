@@ -1,7 +1,7 @@
 import "./ProjectDetails.css";
 import { Link } from "react-router-dom";
 
-import dashboard from "../assets/invoice.png";
+import dashboard from "../assets/invoice-temp.png";
 
 const InvoiceDashboard = () => {
   return (

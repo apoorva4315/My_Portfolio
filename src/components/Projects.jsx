@@ -1,9 +1,9 @@
 import "./Projects.css";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import jobPortal from "../assets/job.png";
-import dashboard from "../assets/invoice.png";
-import kibana from "../assets/kibana.png";
+import jobPortal from "../assets/job-temp.png";
+import dashboard from "../assets/invoice-temp.png";
+import kibana from "../assets/kibana-temp.png";
 import uiux from "../assets/figma.png";
 
 const projects = [
