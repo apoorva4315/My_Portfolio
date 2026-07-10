@@ -1,0 +1,82 @@
+.tech-stack-section {
+  margin-left: 80px;
+  padding: 50px 80px;
+  background: #050816;
+  margin-top: -200px;
+}
+
+.tech-stack-section h4 {
+  color: #9ca3af;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 45px;
+  color: #8b5cf6;
+  margin-bottom: 12px;
+}
+
+.tech-item p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tech-item:hover {
+  transform: translateY(-6px);
+}
+
+.tech-item:hover .icon,
+.tech-item:hover .text-icon {
+  color: #a855f7;
+}
+
+/* Text-based icons for TypeScript, Tailwind, Redux */
+
+/* .text-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tech-item:hover .text-icon {
+  background: #a855f7;
+} */
+
+@media (max-width: 768px) {
+  .tech-stack-section {
+    margin-left: 0;
+    padding: 40px 20px;
+  }
+
+  .tech-row {
+    justify-content: center;
+    gap: 30px;
+  }
+}

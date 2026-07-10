@@ -1,0 +1,151 @@
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 80px;
+    margin-left:80px;
+    background:#050816;
+    color:white;
+    margin-top: -60px;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-subtitle{
+    color:#cfcaca;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:68px;
+    margin-bottom:10px;
+    line-height:1.1;
+}
+
+.hero h1 span{
+    color:#8b5cf6;
+}
+
+.hero h2{
+    color:#94a3b8;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.hero-description{
+    max-width:520px;
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+}
+
+.primary-btn{
+    background:#8b5cf6;
+    color:white;
+    padding:15px 32px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    border:2px solid #8b5cf6;
+    color:white;
+    padding:15px 32px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+    background:#8b5cf6;
+}
+
+.hero-social{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+}
+
+.hero-social a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#111827;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    transition:.3s;
+}
+
+.hero-social a:hover{
+    background:#8b5cf6;
+}
+
+.hero-right{
+    width:45%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.profile-circle{
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8b5cf6,#2563eb);
+    padding:8px;
+}
+
+.profile-circle img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    background:#111827;
+}
+
+.experience-card{
+    position:absolute;
+    left:-20px;
+    top:80px;
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(139,92,246,.2);
+}
+
+.count{
+    position:absolute;
+    right:60px;
+    bottom:50px;
+    background:#111827;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(139,92,246,.2);
+}
+
+.experience-card h3,
+.count h3{
+    color:#8b5cf6;
+    font-size:32px;
+}
