@@ -8,7 +8,6 @@ const learning = [
   "System Design",
   "Docker",
   "CI/CD",
-  "Data Structures & Algorithms",
 ];
 
 const Learning = () => {
