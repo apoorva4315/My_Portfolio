@@ -1,5 +1,4 @@
 import "./Footer.css";
-import { useState } from "react";
 import {
   FaGithub,
   FaLinkedinIn,
@@ -8,20 +7,11 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  const [showMessage, setShowMessage] = useState(false);
-
-  const handleGithubClick = () => {
-    setShowMessage(true);
-
-    setTimeout(() => {
-      setShowMessage(false);
-    }, 2500);
-  };
-
   return (
     <footer className="footer">
       <div className="footer-container">
-       
+        
+
         <div className="footer-brand">
           <h2>Apoorva Kulkarni</h2>
 
@@ -31,23 +21,24 @@ const Footer = () => {
           </p>
         </div>
 
-
+     
 
         <div className="footer-connect">
           <h3>Connect</h3>
 
           <div className="footer-social">
+            
 
-
-            <button
-              className="social-btn"
-              onClick={handleGithubClick}
+            <a
+              href="https://github.com/apoorva4315"
+              target="_blank"
+              rel="noreferrer"
               title="GitHub"
             >
               <FaGithub />
-            </button>
+            </a>
 
- 
+          
 
             <a
               href="https://www.linkedin.com/in/apoorva-kulkarni-44b943218"
@@ -58,6 +49,7 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
 
+            
 
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=apoorva4994@gmail.com"
@@ -71,19 +63,14 @@ const Footer = () => {
         </div>
       </div>
 
-      {showMessage && (
-        <div className="toast-message">
-          GitHub repositories are currently being organized and will be
-          available soon.
-        </div>
-      )}
+     
 
       <div className="footer-bottom">
         <p>
           © {new Date().getFullYear()} Apoorva Kulkarni. All Rights Reserved.
         </p>
 
-        <a href="#home">
+        <a href="#home" title="Back to Top">
           <FaArrowUp />
         </a>
       </div>

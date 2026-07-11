@@ -31,20 +31,9 @@ const testimonials = [
 
 const ExtraSection = () => {
   const [current, setCurrent] = useState(0);
-  const [showMessage, setShowMessage] = useState(false);
-
-  const handleGithubClick = () => {
-    setShowMessage(true);
-
-    setTimeout(() => {
-      setShowMessage(false);
-    }, 2500);
-  };
-
   return (
     <>
       <section className="extra-section">
-
         <div className="extra-card">
           <h2>
             Education <span>•</span>
@@ -130,8 +119,8 @@ const ExtraSection = () => {
           </h2>
 
           <p className="contact-text">
-            I'm always open to discussing new opportunities, collaborations,
-            and exciting projects.
+            I'm always open to discussing new opportunities, collaborations, and
+            exciting projects.
           </p>
 
           <div className="contact-item">
@@ -150,13 +139,14 @@ const ExtraSection = () => {
           </div>
 
           <div className="social-icons">
-            <button
-              className="social-btn"
-              onClick={handleGithubClick}
+            <a
+              href="https://github.com/apoorva4315"
+              target="_blank"
+              rel="noreferrer"
               title="GitHub"
             >
               <FaGithub />
-            </button>
+            </a>
 
             <a
               href="https://www.linkedin.com/in/apoorva-kulkarni-44b943218/"
@@ -176,13 +166,6 @@ const ExtraSection = () => {
           </div>
         </div>
       </section>
-
-      {showMessage && (
-        <div className="toast-message">
-          GitHub repositories are currently being organized and will be
-          available soon.
-        </div>
-      )}
     </>
   );
 };
